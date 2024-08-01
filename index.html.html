@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones UNP </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Celeste claro */
+        }
+        header {
+            background-color: #0288d1; /* Azul */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 0;
+            background: #0277bd; /* Azul oscuro */
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #01579b; /* Azul más oscuro */
+        }
+        .container {
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+        }
+        footer {
+            background-color: #0277bd; /* Azul oscuro */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .form-container h2 {
+            margin-top: 0;
+        }
+        .form-container input[type="text"], 
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #0288d1; /* Azul */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #0277bd; /* Azul oscuro */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soluciones de Ejercicios</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#ejercicios">Ejercicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#ingresar-problema">Ingresar Problema</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="inicio">
+        <h2>Bienvenido</h2>
+        <p>Este sitio web esta dedicado a resolver ejercicios de la UNP. Aquí encontrarás imágenes con las soluciones detalladas de cada ejercicio.</p>
+    </div>
+    <div class="container" id="ejercicios">
+        <h2>Ejercicios</h2>
+        <div class="gallery">
+            <!-- Aquí puedes agregar tus imágenes -->
+            <img src="ruta/de/tu/imagen1.jpg" alt="Solución Ejercicio 1">
+            <img src="ruta/de/tu/imagen2.jpg" alt="Solución Ejercicio 2">
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+    </div>
+    <div class="container" id="ingresar-problema">
+        <h2>Ingresar Problema</h2>
+        <div class="form-container">
+            <form action="procesar_problema.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="problema">Problema:</label>
+                <textarea id="problema" name="problema" rows="4" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="container" id="contacto">
+        <h2>Contacto</h2>
+        <p>Para preguntas o sugerencias, por favor contáctame en: <a href="mailto:richard960596675@gmail.com">richard960596675@gmail.com</a></p>
+    </div>
+    <footer>
+        <p>&copy; UNP Soluciones de Ejercicios</p>
+    </footer>
+</body>
+</html>
